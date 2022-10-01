@@ -1,0 +1,18 @@
+<body>
+    <h1>Updated  Watched list</h1>
+    <ul>
+        {% for movie in movies %}
+        <span> 
+            <li>{{ movie.title }} ||     
+                {{ movie.year }}  ||   
+                {{movie.rating}}  || 
+                <a href="/movies/{{ movie.id }}/edit">Edit</a> ||
+                <a href="/movies/{{ movie.id }}/delete">Delete</a>
+            </li>
+                            
+        </span>
+
+            
+        {% endfor %}
+    </ul>
+</body>

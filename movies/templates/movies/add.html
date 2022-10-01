@@ -1,0 +1,12 @@
+<body>
+    <h1>Add a movie</h1>
+    <form action="/movies/add" method="POST">
+        {{ csrf_token }}
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title">
+        <label for="year">Year</label>
+        <input type="text" name="year" id="year">
+        <input type="submit" value="Add">
+    </form>
+
+</body>
